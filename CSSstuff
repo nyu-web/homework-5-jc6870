@@ -1,0 +1,114 @@
+/*this would be the SCSS version of making a grid ruler*/
+.col-1 {
+  /*injecting the variable into the list*/
+  grid-column: span 1;
+}
+
+.col-2 {
+  /*injecting the variable into the list*/
+  grid-column: span 2;
+}
+
+.col-3 {
+  /*injecting the variable into the list*/
+  grid-column: span 3;
+}
+
+.col-4 {
+  /*injecting the variable into the list*/
+  grid-column: span 4;
+}
+
+.col-5 {
+  /*injecting the variable into the list*/
+  grid-column: span 5;
+}
+
+.col-6 {
+  /*injecting the variable into the list*/
+  grid-column: span 6;
+}
+
+.col-7 {
+  /*injecting the variable into the list*/
+  grid-column: span 7;
+}
+
+.col-8 {
+  /*injecting the variable into the list*/
+  grid-column: span 8;
+}
+
+.col-9 {
+  /*injecting the variable into the list*/
+  grid-column: span 9;
+}
+
+.col-10 {
+  /*injecting the variable into the list*/
+  grid-column: span 10;
+}
+
+.col-11 {
+  /*injecting the variable into the list*/
+  grid-column: span 11;
+}
+
+.col-12 {
+  /*injecting the variable into the list*/
+  grid-column: span 12;
+}
+
+/*bfs stands for base_font_size*/
+h1 {
+  font-size: 50px;
+  /*only SCSS can do calculations with variables*/
+  margin: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 10px;
+  margin: 10px;
+}
+
+ul {
+  font-size: 10px;
+  margin: 5px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: solid 1px black;
+  display: inline-block;
+}
+
+.button--state-danger {
+  background-color: blue;
+  color: white;
+}
+
+.square100 {
+  border: solid 2px black;
+  /*when you want to make a bunch of variants of something. You can also give a default value to one of the parameters (bc or w) so you don't have to enter in the same value all the time.*/
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: blue;
+  /*include includes the style we literally just made*/
+}
+
+.square50 {
+  border: solid 4px black;
+  /*when you want to make a bunch of variants of something. You can also give a default value to one of the parameters (bc or w) so you don't have to enter in the same value all the time.*/
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: orange;
+}
+
+/*advantages of SCSS: it seems more organized, and helps list a lot of interchangeable modifiers for a variety of classes.*/
