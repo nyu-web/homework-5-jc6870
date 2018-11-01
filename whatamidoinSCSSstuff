@@ -14,7 +14,7 @@ $base_text_color: white;
 
 $base_margin: 10px;
 
-@base_margin_list: 5px;
+$base_margin_list: 5px;
 
 $bsf: 10px; /*bfs stands for base_font_size*/
 
@@ -35,7 +35,7 @@ h3{
 
 ul{
   font-size: $bsf;
-  margin: @base_margin_list;
+  margin: $base_margin_list;
 }
 
 .button{
