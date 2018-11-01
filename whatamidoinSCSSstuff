@@ -1,0 +1,78 @@
+/*this would be the SCSS version of making a grid ruler*/
+@for $i from 1 through 12{
+  .col-#{$i} {/*injecting the variable into the list*/
+    grid-column: span $i;
+
+  }
+}
+
+$base_color: #333;
+$base_text_color: white;
+
+$danger_color: red;
+$base_text_color: white;
+
+$base_margin: 10px;
+
+@base_margin_list: 5px;
+
+$bsf: 10px; /*bfs stands for base_font_size*/
+
+h1{
+  font-size: $bsf*5; /*only SCSS can do calculations with variables WOW*/
+  margin: $base_margin;
+}
+
+h2{
+  font-size: $bsf*2;
+  margin: $base_margin;
+}
+
+h3{
+  font-size: $bsf;
+  margin: $base_margin;
+}
+
+ul{
+  font-size: $bsf;
+  margin: @base_margin_list;
+}
+
+.button{
+  padding: 10px 20px;
+  border: solid 1px black;
+  display: inline-block;
+}
+
+.button--state-danger{
+  background-color: blue;
+  color: $base_text_color;
+}
+
+
+@mixin square($w, $bc){ /*when you want to make a bunch of variants of something. You can also give a default value to one of the parameters (bc or w) so you don't have to enter in the same value all the time.*/
+  width: $w;
+  height: $w;
+  border-radius: 5px;
+  background-color: $bc;
+}
+.square100{ 
+  border: solid 2px black;
+  @include square(100px, blue); /*include includes the style we literally just made*/
+}
+.square50{
+  border: solid 4px black;
+  @include square(50px, orange);
+}
+
+
+@media screen and (max-width: 768px){
+  
+  
+}
+@media screen and (min-width: 1224px){
+  
+  
+}  
+
+/*advantages of SCSS: it seems more organized, and helps list a lot of interchangeable modifiers for a variety of classes.*/
