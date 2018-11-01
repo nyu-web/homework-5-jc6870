@@ -33,7 +33,7 @@ h3{
   margin: $base_margin;
 }
 
-ul{
+ul{ /*same kinda stuff for li*/
   font-size: $bsf;
   margin: $base_margin_list;
 }
